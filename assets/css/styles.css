@@ -32,21 +32,62 @@ a {
 .btn {
     display: inline-block;
     min-width: 118px;
-    padding: 11px 16px;
+    padding: 12px 16px;
     color: #fff;
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
     background: #171100;
-    border-radius: 24.5px;
+    border-radius: 999px;
 }
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 :root {
     --font-heading: Sen, sans-serif;
+}
+
+.heading {
+    width: 470px;
+    color: #171100;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 117.241%; /* 117.241% */
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 126.316%; /* 126.316% */
+}
+
+.desc {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%; /* 166.667% */
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.word-break-all {
+    word-break: break-all;
 }
 
 /* Header */
@@ -129,7 +170,7 @@ a {
     height: 685px;
     border-radius: 20px;
     object-fit: cover;
-    vertical-align: bottom; 
+    vertical-align: bottom;
     /* display: block; */
 }
 
@@ -194,22 +235,8 @@ a {
     padding: 64px 0 0 130px;
 }
 
-.hero-content .heading {
-    width: 470px;
-    color: #171100;
-    font-family: var(--font-heading);
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 68px; /* 117.241% */
-    letter-spacing: -1.16px;
-}
-
 .hero-content .desc {
     margin-top: 22px;
-    color: #5f5b53;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 166.667%; /* 166.667% */
 }
 
 .hero-content .cta-group {
@@ -266,4 +293,117 @@ a {
     font-size: 4.4rem;
     font-weight: 700;
     line-height: 122.727%; /* 122.727% */
+}
+/*============ Popular ==================*/
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-top .desc {
+    max-width: 458px;
+    margin-top: 16px;
+}
+
+.popular-top .control {
+    display: flex;
+    gap: 18px;
+}
+
+.popular-top .control-btn {
+    color: #ffb900;
+    border: 1px solid #ffb900;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-top .control-btn:hover {
+    cursor: pointer;
+    color: white;
+    background: #ffb900;
+}
+
+.popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular .course-item {
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+}
+
+.popular .course-item:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.1);
+}
+
+.popular .course-item .thumb {
+    width: calc(100% + 2px);
+    height: 278px;
+    margin: -1px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular .course-item .info {
+    margin: 16px 22px 22px;
+}
+
+.popular .course-item .foot,
+.popular .course-item .head,
+.popular .course-item .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .foot .price,
+.popular .course-item .title a {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%; /* 166.667% */
+}
+
+.popular .course-item .title a {
+    padding-right: 6px;
+}
+
+.popular .course-item .value {
+    margin-left: 6px;
+    color: #fea31b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.popular .course-item .desc {
+    margin: 6px 0 12px;
+    font-size: 1.4rem;
+    line-height: 185.714%; /* 185.714% */
+}
+
+.popular .foot .subs-btn:hover {
+    background: #FFB900;
+}
+
+.popular .foot .subs-btn {
+    border: none;
+    font-size: 1.4rem;
+    line-height: 185.714%; /* 185.714% */
 }
