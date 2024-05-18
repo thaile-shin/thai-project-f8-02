@@ -51,7 +51,6 @@ a {
 }
 
 .heading {
-    width: 470px;
     color: #171100;
     font-family: var(--font-heading);
     font-weight: 700;
@@ -233,6 +232,9 @@ a {
 .hero-content {
     width: 51%;
     padding: 64px 0 0 130px;
+}
+.hero-content .heading {
+    width: 470px;
 }
 
 .hero-content .desc {
@@ -481,4 +483,68 @@ a {
     font-style: italic;
     font-weight: 400;
     line-height: 153.846%; /* 153.846% */
+}
+
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .images img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.features .images img:first-child {
+    margin-top: 34px;
+}
+
+.features .content {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.features .content .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.feature-btn {
+    margin-top: 32px;
+    min-width: 138px;
+    line-height: 1.75;
+    background: #ffb900;
+}
+
+.features-2nd {
+    margin-top: 36px;
+}
+
+.features-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+    width: 49%;
+}
+
+.features-2nd .images img {
+    width: 470px;
+    height: 440px;
 }
